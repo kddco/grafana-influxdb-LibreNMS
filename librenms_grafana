@@ -5,14 +5,18 @@ services:
     networks:
             ithelp_application:
                 ipv4_address: 172.28.0.2
+    volumes:
+      - ./data/pushgateway:/pushgateway
     ports:
       - 9091:9091
+
   prometheus:
     image: prom/prometheus:v2.18.1
     command: --config.file=/etc/prometheus/prometheus.yml
     volumes:
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
       - ./prometheus/alerts/:/etc/prometheus/rules.d/
+      - ./data/prometheus:/prometheus
     networks:
             ithelp_application:
                 ipv4_address: 172.28.0.3
@@ -21,6 +25,8 @@ services:
 
   grafana:
     image: grafana/grafana
+    volumes:
+      - ./data/grafana:/var/lib/grafana
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
     networks:
