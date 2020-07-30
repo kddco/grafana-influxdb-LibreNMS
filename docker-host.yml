@@ -1,0 +1,36 @@
+version: "2"
+services:
+  pushgateway:
+    image: prom/pushgateway:v0.4.0
+    network_mode: "host"
+
+  prometheus:
+    image: prom/prometheus:v2.18.1
+    command: --config.file=/etc/prometheus/prometheus.yml
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus/alerts/:/etc/prometheus/rules.d/
+    network_mode: "host"
+
+  grafana:
+    image: grafana/grafana
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    network_mode: "host"
+
+  alertmanager:
+    image: prom/alertmanager:v0.11.0
+    command: --config.file=/etc/alertmanager/alertmanager.yml
+    volumes:
+      - ./alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml
+    network_mode: "host"
+  # prometheus-pve-exporter:
+  #   image: prompve/prometheus-pve-exporter
+  #   networks:
+  #           ithelp_application:
+  #               ipv4_address: 172.28.0.6
+  #   ports:
+  #     - 9221:9221
+  #   volumes:
+  #     - ./prometheus-pve-exporter/pve.yml:/etc/pve.yml
+
