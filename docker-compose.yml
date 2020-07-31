@@ -39,15 +39,15 @@ services:
             ithelp_application:
                 ipv4_address: 172.28.0.5
                   
-  prometheus-pve-exporter:
-    image: prompve/prometheus-pve-exporter:1.3.2
-    networks:
-            ithelp_application:
-                ipv4_address: 172.28.0.6
-    ports:
-      - 9221:9221
-    volumes:
-      - ./prometheus-pve-exporter/pve.yml:/etc/pve.yml
+  # prometheus-pve-exporter:
+  #   image: prompve/prometheus-pve-exporter
+  #   networks:
+  #           ithelp_application:
+  #               ipv4_address: 172.28.0.6
+  #   ports:
+  #     - 9221:9221
+  #   volumes:
+  #     - ./prometheus-pve-exporter/pve.yml:/etc/pve.yml
 
 networks:
     ithelp_application:
