@@ -8,4 +8,19 @@
 ## 建立influxdb的Container
 - docker run -d -p 8083:8083 -p 8086:8086 -p 8090:8090 -p 8099:8099 --name influxsrv -e INFLUXDB_ADMIN_USER=librenms -e INFLUXDB_ADMIN_PASSWORD=password tutum/influxdb
 ## 到LibreNMS開啟外部整合
- 
+- 全域設定
+![](https://i.imgur.com/hLRu9HQ.png)
+- 輪詢器
+![](https://i.imgur.com/F9GhKCP.png)
+- InfluxDB
+ ![](https://i.imgur.com/LqI5EYR.png)
+- 設定連接API
+![](https://i.imgur.com/Qk4v5LH.png)
+## 在influxdb上建立librenms資料庫
+- 點擊右邊,選擇Create database
+![](https://i.imgur.com/bWPAfT9.png)
+- 輸入語法並按下**enter**
+![](https://i.imgur.com/qhPxBTj.png)
+
+
+
