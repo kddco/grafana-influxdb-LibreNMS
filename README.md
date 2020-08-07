@@ -1,4 +1,4 @@
-# docker-compose
+# 安裝Grafana在Docker裡面
 - docker-compose -f docker-compose-bridge.yml up -d
 
 - 文章參照 https://www.cnblogs.com/python-gm/p/12843653.html
