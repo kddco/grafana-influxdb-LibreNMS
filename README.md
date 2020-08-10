@@ -1,4 +1,6 @@
 # Grafana InfluxDB整合步驟文件
+## clone
+- git clone https://github.com/kddco/grafana-influxdb.git
 ## Grafana安裝
 ## 安裝Grafana在Docker裡面
 - `docker-compose -f docker-compose-bridge.yml up -d`
