@@ -17,7 +17,7 @@
 # influxdb時序性資料庫安裝
 - 連接libreNMS的主機資訊，並透過influxdb來媒介，最後呈現到grafana上面
 ## 建立influxdb的Container
-- `docker run -d -p 8083:8083 -p 8084:8084 -e PRE_CREATE_DB="librenms" -e INFLUXDB_ADMIN_USER=librenms -e INFLUXDB_ADMIN_PASSWORD=password tutum/influxdb:latest`
+- `docker run -d -p 8083:8083 -p 8086:8086 -e PRE_CREATE_DB="librenms" -e INFLUXDB_ADMIN_USER=librenms -e INFLUXDB_ADMIN_PASSWORD=password tutum/influxdb:latest`
 
 
 - 已在docker run環境參數中設定admin帳號密碼 **librenms/password**
