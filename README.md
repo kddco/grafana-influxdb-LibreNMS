@@ -69,7 +69,12 @@
 - 按下load
 ![](https://i.imgur.com/GRz58WZ.png)
 - 選取InfluxDB並按下import
-
+## 查看套版的Dashboard
+### 儀表板管理
+![](https://i.imgur.com/3MpF1pG.png)
+### 最終成品
+- 部分數值為空是主機本身無提供，屬正常現象
+![](https://i.imgur.com/Wun6S18.png)
 
 
 
