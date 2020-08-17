@@ -1,5 +1,7 @@
 # Grafana InfluxDB整合步驟文件
-## clone
+## 前置所需軟體
+- docker engine
+## clone專案
 - `git clone https://github.com/kddco/grafana-influxdb.git`
 ## Grafana安裝
 ## 安裝Grafana在Docker裡面
