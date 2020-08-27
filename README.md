@@ -1,6 +1,8 @@
 # Grafana InfluxDB LibreNMS整合步驟文件
 ## 前置所需軟體
 - docker engine
+    - [安裝文件教學 form Teams ](https://teams.microsoft.com/l/file/50770BFC-6D2A-4D70-9976-58D483825242?tenantId=46d33a5d-acec-4d74-969f-29a02daf8af0&fileType=pdf&objectUrl=https%3A%2F%2Fiiiorgtw.sharepoint.com%2Fteams%2FLibreNMS%2FShared%20Documents%2FGeneral%2F%E6%9A%91%E6%9C%9F%E5%B7%A5%E8%AE%80%E8%A8%88%E7%95%AB%2Fdocker%20engine%20%E5%AE%89%E8%A3%9D.pdf&baseUrl=https%3A%2F%2Fiiiorgtw.sharepoint.com%2Fteams%2FLibreNMS&serviceName=teams&threadId=19:2ec34ed47fd24bf099b21ecbcd69bc7a@thread.tacv2&groupId=e5ee29ff-ecc1-4146-b966-fb9de70bd807)
+
 ## clone專案
 - `git clone https://github.com/kddco/grafana-influxdb.git`
 ## Grafana安裝
