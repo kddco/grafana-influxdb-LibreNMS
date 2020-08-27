@@ -14,7 +14,7 @@
 
 - 帳號密碼都是admin
 - 如有錯誤
-  - 嘗試登入上層router分配給機器的ip(192.168.70.101)
+  - 嘗試登入上層router分配給機器的ip(192.168.70.101)來登入
   - docker logs查看
 - 文章參照 https://www.cnblogs.com/python-gm/p/12843653.html
 
